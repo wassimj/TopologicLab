@@ -1,10 +1,10 @@
-# Server web/import dependencies only. Keep the installed TopologicPy/PythonOCC.
+# App dependencies. Reuse the existing TopologicPy/PythonOCC environment.
+topologicpy==0.9.84
 fastapi>=0.115,<1
 uvicorn>=0.30,<1
 python-multipart>=0.0.18
 ezdxf>=1.4,<2
 rhino3dm>=8.17,<9
 shapely>=2.0,<3
-networkx>=3.4,<4
 
 numpy>=1.26

@@ -26,7 +26,9 @@ python launch.py
 
 Open the address printed by the launcher, normally http://127.0.0.1:8017. If that port is occupied, the launcher chooses a free port.
 
-The environment needs the current local TopologicPy navigation, clearance and isovist boundary-type APIs, NumPy, Shapely 2 or later, FastAPI, Uvicorn, python-multipart and the existing TopologicPy/PythonOCC setup. `backend/web-requirements.txt` lists the web and import dependencies. The launcher does not install packages, change TopologicPy or create an environment.
+The environment needs the current local TopologicPy navigation, clearance and isovist boundary-type APIs, NumPy, Shapely 2 or later, FastAPI, Uvicorn, python-multipart and the existing TopologicPy/PythonOCC setup. Both requirements files declare TopologicPy as an app dependency; `backend/web-requirements.txt` leaves the kernel/backend installation to the existing environment. The launcher does not install packages, change TopologicPy or create an environment.
+
+For a 2D example, import `examples/example-floor.obj`.
 
 ## Try the building
 
