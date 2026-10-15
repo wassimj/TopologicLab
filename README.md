@@ -57,7 +57,7 @@ Stair points come from horizontal tread and landing geometry. Physically adjoini
 
 Lift doors are associated geometrically with a lift footprint. Each served floor gets a door point and cabin-centre point. Consecutive served stops connect vertically; lift nodes have no result tiles and are not coloured. Door/cabin and connector/floor attachments are checked against available walkable geometry and obstacles. Connector attachments choose the nearest reachable floor-graph point.
 
-The application owns these prototype extraction and connection algorithms, as requested. TopologicPy provides the existing public graph analysis, angular analysis, isovist, Dijkstra and straightening operations. Angular measures use full 3D segment directions. Because those APIs return segment scores, a navigation tile shows the mean of the scores on its incident segments. Lifts participate in graph analysis but are not coloured.
+The application uses the public TopologicPy IFC and Navigation APIs for extraction, grids and connector construction. TopologicPy also provides graph analysis, angular analysis, isovists, Dijkstra routing and straightening. Angular measures use full 3D segment directions. Because those APIs return segment scores, a navigation tile shows the mean of the scores on its incident segments. Lifts participate in graph analysis but are not coloured.
 
 Existing visibility, grid, imported segment, imported axial, generated axial and isovist-intersection options are retained. Imported-network options require usable segment input; IFC buildings usually use a grid, visibility or generated axial graph. Each storey's planar network is joined to the vertical connectors.
 
