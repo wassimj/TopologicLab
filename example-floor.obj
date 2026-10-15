@@ -1,0 +1,6 @@
+# Simple horizontal room, model dimensions 8 x 6 units
+v 0 0 0
+v 8 0 0
+v 8 6 0
+v 0 6 0
+f 1 2 3 4
